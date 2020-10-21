@@ -1,0 +1,14 @@
+#article {
+    background-color:rgba(43, 50, 58, 0.774);
+    color: white;
+}
+
+#personal {
+    background-color: rgba(73, 85, 99, 0.774);
+    box-shadow: 10px 10px 7px black;
+}
+
+#project {
+    background-color: rgba(98, 122, 148, 0.774);
+    box-shadow: 10px 10px 7px black;
+}

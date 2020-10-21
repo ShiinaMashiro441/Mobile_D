@@ -1,0 +1,19 @@
+#article {
+    background-color:rgba(43, 50, 58, 0.774);
+    color: white;
+}
+
+#journal {
+    background-color: rgba(73, 85, 99, 0.774);
+    box-shadow: 10px 10px 7px black;
+}
+
+#seminar {
+    background-color: rgba(77, 96, 116, 0.774);
+    box-shadow: 10px 10px 7px black;
+}
+
+#books {
+    background-color: rgba(94, 115, 138, 0.774);
+    box-shadow: 10px -10px 7px black;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Declare the char type-->
+    <meta charset="utf-8" />
+
+    <!--Describe the author of the site-->
+    <meta name="Author" content="JustBelieveMe, HSJ, Groooot" />
+
+    <!--Describe the use of the site-->
+    <meta name="description" content="To introduce the professor Alpha(Jui-Fa, Chen), Tamkang University" />
+
+    <!-- the website title -->
+    <title>TKU professor</title>
+
+    <!--link the css file to this html file-->
+    <link rel="stylesheet" type="text/css" href="./css/basic.css" />
+    <link rel="stylesheet" type="text/css" href="./css/first_page.css" />
+
+    <script src="./js/basic.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <!-- to show the school badge and school logo on the head of the site -->
+        <a href="http://www.tku.edu.tw/" target="_blank">
+            <img id="tku_badge" src="http://www.tku.edu.tw/about/leaders/President/images/logo-index.png" title="tku_badge" alt="淡江大學_校徽" />
+            <img id="tku_word" src="http://photo.tku.edu.tw/getjpg.cshtml?im=78CE379247A25344E3F33738FAEB106B38C7E1C9AA59765A60A76E031C8322A0189F42601AAFA8EFDAEEB705EBEBF9D0BE0CF8491DC0DD91" title="tku_words" alt="淡江大學_文字樣" />
+        </a>
+        <!-- to show the badge and name of CSIE-->
+        <a href="http://www.csie.tku.edu.tw/main.php" target="_blank">
+            <img id="CSIE_badge" src="https://i.imgur.com/RvEQy5I.png" title="CSIE_badge" alt="資工_系徽" />
+            <img id="CSIE_word" src="https://i.imgur.com/aiCjdem.png" title="CSIE_word" alt="資工_文字樣" />
+        </a>
+    </div>
+
+    <div id="nav">
+        <span id="sidenav_icon" onclick="openNav()">&#9776;</span>
+        <div id="sidenav">
+            <ul>
+                <li>
+                    <span id="sidenav_close_icon" onclick="closeNav()">&#9776;</span>
+                </li>
+                <li>
+                    <a class="active" href="./index.html#header" onclick="closeNav()">網站首頁</a>
+                </li>
+                <li>
+                    <a href="./index.html#introduction" onclick="closeNav()">個人簡介</a
+                  >
+                </li>
+                <li class="dropdown">
+                  <a href="./paper_page.html#journal"  class="dropbtn"  onclick="closeNav()">期刊論文</a>
+                    <div class="dropdown-content">
+                        <a href="./paper_page.html#journal-1" onclick="closeNav()">87-95年</a>
+                        <a href="./paper_page.html#journal-2" onclick="closeNav()">96-105年</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./paper_page.html#books" onclick="closeNav()">專書著作</a>
+                </li>
+                <li>
+                    <a href="./research_page.html#personal" onclick="closeNav()">個人研究</a>
+                </li>
+                <li>
+                    <a href="./research_page.html#project" onclick="closeNav()">研究計畫</a>
+                </li>
+                <li>
+                    <a href="./production_planning_page.html" onclick="closeNav()">產學計畫</a>
+                </li>
+                <li class="dropdown">
+                    <a href="./paper_page.html#seminar" class="dropbtn" onclick="closeNav()">研討會論文</a>
+                    <div class="dropdown-content">
+                        <a href="./paper_page.html#seminar-1" onclick="closeNav()">81-91年</a>
+                        <a href="./paper_page.html#seminar-2" onclick="closeNav()">92-102年</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="aside"></div>
+
+    <div id="article">
+        <div id="article_main_page">
+            <br />
+            <br />
+            <img id="alpha_main_pic" src="https://www.caresys.com.tw/images/SuccessStory/%E6%B7%A1%E5%A4%A7.png" />
+            <br />
+            <br />
+            <br />
+            <br />
+            <p id="alpha_famous_word"><i>「想抓我ＢＵＧ？先練個一百年吧！」</i></p>
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+        <div id="introduction">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <img id="alpha_introduction_pic" src="./img/main.png" />
+            <pre id="intro_word">
+
+                姓名  陳瑞發
+
+                電話  02-26215656 ext.3308
+
+                傳真  02-26209749
+
+                辦公室  E756
+
+                電郵  <a href="Mailto:alpha@mail.tku.edu.tw">alpha@mail.tku.edu.tw</a> 
+
+                網站  <a href="http://teacher.tku.edu.tw/PsnProfile.aspx?u=t7168301" target="blank">個人網站</a>
+
+                學歷  淡江大學-資訊工程博士
+
+                經歷  專長：電腦網路、無線感測網路、醫學工程
+
+                類別  專任師資
+
+                職稱  副教授
+
+
+            
+            </pre>
+        </div>
+    </div>
+
+    <div id="section"></div>
+
+    <div id="footer">
+        <br />
+        <br />
+        <pre><a id="footer_link_TKU" href="https://www.tku.edu.tw/" target="blank">淡江大學入口</a>   <b>|</b>   <a id="footer_link_CSIE" href="http://www.csie.tku.edu.tw/main.php" target="blank">淡江資工網站</a></pre>
+        <br />
+        <br />
+        <p>Copyright © 2020 HSJ(黃士哲). All rights reserved.</p>
+        <br />
+    </div>
+</body>
+
+</html>

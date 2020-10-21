@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Declare the char type-->
+    <meta charset="utf-8" />
+
+    <!--Describe the author of the site-->
+    <meta name="Author" content="JustBelieveMe, HSJ, Groooot" />
+
+    <!--Describe the use of the site-->
+    <meta name="description" content="To introduce the professor Alpha(Jui-Fa, Chen), Tamkang University" />
+
+    <!-- the website title -->
+    <title>TKU professor</title>
+
+    <!--link the css file to this html file-->
+    <link rel="stylesheet" type="text/css" href="./css/basic.css" />
+    <link rel="stylesheet" type="text/css" href="./css/research_page.css" />
+
+    <script src="./js/basic.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <!-- to show the school badge and school logo on the head of the site -->
+        <a href="http://www.tku.edu.tw/" target="_blank">
+            <img id="tku_badge" src="http://www.tku.edu.tw/about/leaders/President/images/logo-index.png" title="tku_badge" alt="淡江大學_校徽" />
+            <img id="tku_word" src="http://photo.tku.edu.tw/getjpg.cshtml?im=78CE379247A25344E3F33738FAEB106B38C7E1C9AA59765A60A76E031C8322A0189F42601AAFA8EFDAEEB705EBEBF9D0BE0CF8491DC0DD91" title="tku_words" alt="淡江大學_文字樣" />
+        </a>
+        <!-- to show the badge and name of CSIE-->
+        <a href="http://www.csie.tku.edu.tw/main.php" target="_blank">
+            <img id="CSIE_badge" src="https://i.imgur.com/RvEQy5I.png" title="CSIE_badge" alt="資工_系徽" />
+            <img id="CSIE_word" src="https://i.imgur.com/aiCjdem.png" title="CSIE_word" alt="資工_文字樣" />
+        </a>
+    </div>
+
+    <div id="nav">
+        <span id="sidenav_icon" onclick="openNav()">&#9776;</span>
+        <div id="sidenav">
+            <ul>
+                <li>
+                    <span id="sidenav_close_icon" onclick="closeNav()">&#9776;</span>
+                </li>
+                <li>
+                    <a class="active" href="./index.html#header" onclick="closeNav()">網站首頁</a>
+                </li>
+                <li>
+                    <a href="./index.html#introduction" onclick="closeNav()">個人簡介</a
+                  >
+                </li>
+                <li class="dropdown">
+                  <a href="./paper_page.html#journal"  class="dropbtn"  onclick="closeNav()">期刊論文</a>
+                    <div class="dropdown-content">
+                        <a href="./paper_page.html#journal-1" onclick="closeNav()">87-95年</a>
+                        <a href="./paper_page.html#journal-2" onclick="closeNav()">96-105年</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./paper_page.html#books" onclick="closeNav()">專書著作</a>
+                </li>
+                <li>
+                    <a href="./research_page.html#personal" onclick="closeNav()">個人研究</a>
+                </li>
+                <li>
+                    <a href="./research_page.html#project" onclick="closeNav()">研究計畫</a>
+                </li>
+                <li>
+                    <a href="./production_planning_page.html" onclick="closeNav()">產學計畫</a>
+                </li>
+                <li class="dropdown">
+                    <a href="./paper_page.html#seminar" class="dropbtn" onclick="closeNav()">研討會論文</a>
+                    <div class="dropdown-content">
+                        <a href="./paper_page.html#seminar-1" onclick="closeNav()">81-91年</a>
+                        <a href="./paper_page.html#seminar-2" onclick="closeNav()">92-102年</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="aside"></div>
+
+    <div id="article">
+        <br />
+
+        <div id="personal">
+            <h1>個人研究計畫</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td>日期</td>
+                        <td>標題</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="year">1997年01月01日</td>
+                        <td>南投縣政府網頁製作</td>
+                    </tr>
+                    <tr>
+                        <td class="year">1998年01月01日</td>
+                        <td>南投縣政府建置網站及網站系統程式整合</td>
+                    </tr>
+                    <tr>
+                        <td class="year">1999年01月01日</td>
+                        <td>益岱實業有限公司Web Base 訂單與客戶管理系統</td>
+                    </tr>
+                    <tr>
+                        <td class="year">1999年01月01日</td>
+                        <td>
+                            建構國中物理網路化教學環境之研究-子計畫III：國中物理網路學習環境之發展與評鑑
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="year">1999年01月01日</td>
+                        <td>
+                            八十八年下半年及八十九年度行政院農業委員會漁業署漁業全球資訊服務網整合規劃暨教育
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="year">2000年01月01日</td>
+                        <td>台灣研究網路連線計畫(II)-淡江大學</td>
+                    </tr>
+                    <tr>
+                        <td class="year">2000年01月01日</td>
+                        <td>增強網際網路資料庫功能之研究</td>
+                    </tr>
+                    <tr>
+                        <td class="year">2001年01月01日</td>
+                        <td>建置漁業知識庫加強網際網路服務功能</td>
+                    </tr>
+                    <tr>
+                        <td class="year">2002年01月01日</td>
+                        <td>以法語系為基礎之遠距教室</td>
+                    </tr>
+                    <tr>
+                        <td class="year">2002年01月01日</td>
+                        <td>加強網際網路服務功能</td>
+                    </tr>
+                    <tr>
+                        <td class="year">2003年01月01日</td>
+                        <td>簡訊在德明技術學院校園資訊上的應用發展之計劃</td>
+                    </tr>
+                    <tr>
+                        <td class="year">2004年01月01日</td>
+                        <td>緊急應變決策支援專家系統計劃</td>
+                    </tr>
+                    <tr>
+                        <td class="year">2005年01月01日</td>
+                        <td>石化業應變決策支援專家系統建置</td>
+                    </tr>
+                    <tr>
+                        <td class="year">2006年01月01日</td>
+                        <td>緊急應變決策支援專家系統建置計劃</td>
+                    </tr>
+                    <tr>
+                        <td class="year">2006年01月01日</td>
+                        <td>緊急應變決策支援專家系統建置計劃</td>
+                    </tr>
+                    <tr>
+                        <td class="year">2008年01月01日</td>
+                        <td>臺北市市立各級學校資訊設備管理系統建置案</td>
+                    </tr>
+                    <tr>
+                        <td class="year">2009年01月01日</td>
+                        <td>99年度緊急應變決策支援專家系統功能新增及維修案</td>
+                    </tr>
+                    <tr>
+                        <td class="year">2013年02月01日</td>
+                        <td>千人小學堂-大學4+X人才培育機制之建立(I)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <div id="project">
+            <h1>研究計畫</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td>年度</td>
+                        <td>計畫名稱</td>
+                        <td>計畫時間</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="year">88</td>
+                        <td>
+                            建構國中物理網路化教學環境之研究－子計畫三：國中物理網路學習環境之發展與評鑑
+                        </td>
+                        <td>1999年04月 - 2000年07月</td>
+                    </tr>
+                    <tr>
+                        <td class="year">89</td>
+                        <td>台灣研究網路連線計畫(II)淡江大學</td>
+                        <td>2000年07月 - 2001年06月</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br />
+        <br />
+    </div>
+
+    <div id="section"></div>
+
+    <div id="footer">
+        <br />
+        <br />
+        <pre><a id="footer_link_TKU" href="https://www.tku.edu.tw/" target="blank">淡江大學入口</a>   <b>|</b>   <a id="footer_link_CSIE" href="http://www.csie.tku.edu.tw/main.php" target="blank">淡江資工網站</a></pre>
+        <br />
+        <br />
+        <p>Copyright © 2020 HSJ(黃士哲). All rights reserved.</p>
+        <br />
+    </div>
+</body>
+
+</html>
