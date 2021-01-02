@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Include meta tag to ensure proper rendering and touch zooming -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Include jQuery Mobile stylesheets -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <!-- Include the jQuery library -->
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <!-- Include the jQuery Mobile library -->
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <!-- Gacha source code -->
+        <script src="./functional.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="p1">
+            <div data-role="header">
+                <a class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" href="#p1">Home</a>
+                <h1></h1>
+                <a class="ui-btn ui-corner-all ui-shadow ui-icon-bullets ui-btn-icon-left" href="#myPanel">Search</a>
+            </div>
+
+            <div data-role="panel" data-display="overlay" id="myPanel">
+                <h2>Contents</h2>
+                <div data-role="controlgroup" data-type="vertical">
+                    <a href="#p1" data-transition="slide" class="ui-btn">Start Page</a>
+                    <a href="#p2" data-transition="slide" class="ui-btn">Login Page</a>
+                    <a href="#p3" data-transition="slide" class="ui-btn">Game Page</a>
+                </div>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a href="#p2" data-transition="slide" class="ui-btn">p2</a>
+                    <a href="#p3" data-transition="slide" class="ui-btn">p3</a>
+                </div>
+                <img src="https://upload.cc/i1/2020/12/02/8EjxqG.jpg" />
+
+                <div>
+                    <h1>功能說明</h1>
+
+                    <h2>Header：</h2>
+                    <p>Home：會永遠指向P1(就是現在這一頁)</p>
+                    <p>Map：就是個NAV，他會在側邊列出清單，供你選擇瀏覽頁面</p>
+
+                    <h2>P1 (Start Page)</h2>
+                    <p>我們首頁</p>
+
+                    <h2>P2 (Login Page)</h2>
+                    <p>很陽春的使用者登入畫面，還在施工中</p>
+
+                    <h2>P3 (Game Page)</h2>
+                    <p>抽卡遊戲</p>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="page" id="p2">
+            <div data-role="header">
+                <a class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" href="#p1">Home</a>
+                <h1>User Login</h1>
+                <a class="ui-btn ui-corner-all ui-shadow ui-icon-bullets ui-btn-icon-left" href="#myPanel">Search</a>
+            </div>
+
+            <div data-role="panel" data-display="overlay" id="myPanel">
+                <h2>Contents</h2>
+                <div data-role="controlgroup" data-type="vertical">
+                    <a href="#p1" data-transition="slide" class="ui-btn">Start Page</a>
+                    <a href="#p2" data-transition="slide" class="ui-btn">Login Page</a>
+                    <a href="#p3" data-transition="slide" class="ui-btn">Game Page</a>
+                </div>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <div>
+                    <h1>Login Here</h1>
+                    <div>
+                        <label>User: </label>
+                        <input type="text" name="UID" placeholder="Enter Your Account..." />
+                    </div>
+                    <div>
+                        <label>Password: </label>
+                        <input type="password" name="passwd" placeholder="Enter Your Password..." />
+                    </div>
+
+                    <a href="#p3" data-transition="slide" class="ui-btn">Login</a>
+                </div>
+            </div>
+
+            <div data-role="footer">
+                <h1>f2</h1>
+            </div>
+        </div>
+        <div data-role="page" id="p3">
+            <div data-role="header">
+                <a class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" href="#p1">Home</a>
+                <h1>ガチャー</h1>
+                <a class="ui-btn ui-corner-all ui-shadow ui-icon-bullets ui-btn-icon-left" href="#myPanel">Search</a>
+            </div>
+
+            <div data-role="panel" data-display="overlay" id="myPanel">
+                <h2>Contents</h2>
+                <div data-role="controlgroup" data-type="vertical">
+                    <a href="#p1" data-transition="slide" class="ui-btn">Start Page</a>
+                    <a href="#p2" data-transition="slide" class="ui-btn">Login Page</a>
+                    <a href="#p3" data-transition="slide" class="ui-btn">Game Page</a>
+                </div>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <h2>~~ 看看你是不是歐洲人 ~~</h2>
+                <h5>UR: 5%, SR: 15%, R: 25%, N: 55%</h5>
+                <h5 id="status"></h5>
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a href="#" class="ui-btn ui-corner-all ui-shadow" onclick="add_1()">買一次</a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#" class="ui-btn ui-corner-all ui-shadow" onclick="add_X()">自訂數量</a>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a href="#Gacha_result" class="ui-btn ui-corner-all ui-shadow" onclick="gacha_1()">ガチャー x1</a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#Gacha_result" class="ui-btn ui-corner-all ui-shadow" onclick="gacha_10()">ガチャー x10</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="page" data-dialog="true" id="Gacha_result">
+            <div data-role="header">
+                <h1>Gache Result</h1>
+            </div>
+            <div id="alart_content"></div>
+            <div data-role="main" id="main_content">
+                <div class="fr">
+                    <p id="item_1">some_txt1</p>
+                </div>
+                <div class="fr">
+                    <p id="item_2">some_txt2</p>
+                </div>
+                <div class="fr">
+                    <p id="item_3">some_txt3</p>
+                </div>
+                <div class="fr">
+                    <p id="item_4">some_txt4</p>
+                </div>
+                <div class="fr">
+                    <p id="item_5">some_txt5</p>
+                </div>
+                <div class="fr">
+                    <p id="item_6">some_txt6</p>
+                </div>
+                <div class="fr">
+                    <p id="item_7">some_txt7</p>
+                </div>
+                <div class="fr">
+                    <p id="item_8">some_txt8</p>
+                </div>
+                <div class="fr">
+                    <p id="item_9">some_txt9</p>
+                </div>
+                <div class="fr">
+                    <p id="item_10">some_txt0</p>
+                </div>
+            </div>
+            <div data-role="footer">
+                <h2>剩餘抽卡次數：</h2>
+                <h2 id="record"></h2>
+            </div>
+        </div>
+    </body>
+</html>
